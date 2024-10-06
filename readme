@@ -8,7 +8,8 @@ picod
 
 ./picod --utxoindex --rpclisten-borsh=127.0.0.1:36760
 
-....
+.........................
+
 pico-wallet
 
 1 - Iniciar o cliente da wallet
