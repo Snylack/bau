@@ -1,2 +1,42 @@
 picod
+
+1 - Na primeira sincronização do node no momento é necessário adicionar os pares:
+
+./picod --utxoindex --rpclisten-borsh=127.0.0.1:36760 --addpeer=213.199.56.32:16666 --addpeer=213.199.56.32:16878 --addpeer=213.199.56.32:16139 --addpeer=213.199.56.32:16922
+
+2 - A partir da segunda inicialização apenas o comando abaixo:
+
+./picod --utxoindex --rpclisten-borsh=127.0.0.1:36760
+
+....
 pico-wallet
+
+1 - Iniciar o cliente da wallet
+
+./pico-wallet
+
+- Configuração inicial necessária:
+
+network mainnet
+server 127.0.0.0.1:36760
+
+2 - Conectar o cliente da wallet ao node
+
+connect
+
+3 - Criando uma nova wallet
+
+wallet create Nome_da_Wallet
+
+- Escolha um nome, crie uma senha, anote a SEED (mnemonic phrase)
+
+4 - Abrir a wallet:
+
+open Nome_da_Wallet
+(será solicitada a senha criada no passo anterior)
+
+Para demais comandos utilize o comando: help
+
+
+
+
