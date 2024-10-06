@@ -1,6 +1,6 @@
 picod
 
-1 - Na primeira sincronização do node no momento é necessário adicionar os pares:
+1 - Na primeira sincronização do node é necessário adicionar os pares:
 
 ./picod --utxoindex --rpclisten-borsh=127.0.0.1:36760 --addpeer=213.199.56.32:16666 --addpeer=213.199.56.32:16878 --addpeer=213.199.56.32:16139 --addpeer=213.199.56.32:16922
 
